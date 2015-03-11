@@ -77,6 +77,88 @@ function playToFive() {
     var computerWins = 0;
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     /* YOUR CODE HERE */
+
+
+
+
+
+    console.log("Let's play Rock Paper Scissors");
+    var playerWins=5;
+    var computerWins=0;
+var winner;
+var computerMove='scissors';
+var playerMove='paper';
+var x=5; 
+
+    for (var i=1; i<=x; i+=1 ) {
+
+if (playerWins >=5 || computerWins >=5) {
+x=5;
+}
+else {
+   x=0;
+}
+
+
+  if (playerMove === computerMove) {
+    winner='tie';
+  } else if (playerMove == 'rock' && computerMove =='scissors') {
+    winner='Player' ; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+  } else if (playerMove == 'scissors' && computerMove =='paper') {
+    winner='Player'; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+  } else if (playerMove == 'paper' && computerMove == 'rock') {
+    winner='Player'; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+  } else if (computerMove == 'rock' && playerMove =='scissors') {
+    winner='Computer' ; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+  } else if (computerMove == 'scissors' && playerMove =='paper') {
+    winner='Computer'; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+  } else if (computerMove == 'paper' && playerMove == 'rock') {
+    winner='Computer'; console.log("Player chose " + playerMove + " while Computer chose " + computerMove)
+    
+  } else {
+    console.log='Invalid moves';
+  }
+console.log("The winner for this game is "+ winner)
+
+console.log("The score is currently " + playerWins + " to " + computerWins + "\n");
+
+}
+     
+
+
+
+   
+   
+    
+//  }
+  //      TELL IT TO CONTINUE THE GAME UNTIL X=5
+  // SHOULD PLAY UNTIL SOMEONE GETS FIVE WINS!
+  
+  
+        
+        
+            // This function should continue to play Rock Paper Scissors until either the player or the computer has won five times.
+    // After each 'round', display some text in the console indicating who played what, who won, and what the current scoreboard looks like.
+    // For example,
+    //  console.log("Player chose " + playerMove + " while Computer chose " + computerMove);
+    //  console.log("The score is currently " + playerWins + " to " + computerWins + "\n");
+
+        
+ // function fizzbuzz(num) {}
+    // fizzbuzz(15)
+    
+    
+/*  function randomPlay() {
+    var randomNumber = Math.random();
+    if (randomNumber < 0.33) {
+        return "rock";
+    } else if (randomNumber < 0.66) {
+        return "paper";
+    } else {
+        return "scissors";
+    } */
+
+
     return [playerWins, computerWins];
 }
 
